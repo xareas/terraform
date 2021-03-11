@@ -32,6 +32,8 @@ steps:
     command: 'apply'
     workingDirectory: '$(System.DefaultWorkingDirectory)/azure-terraform/kuebernetes'
     environmentServiceName: 'Azure-resource-aforo255'
+    #runAzLogin: true
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
+    allowTelemetryCollection: true
     #allowTelemetryCollection: true
     

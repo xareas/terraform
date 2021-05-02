@@ -35,7 +35,7 @@ steps:
   inputs:
     command: 'apply'
     workingDirectory: '$(System.DefaultWorkingDirectory)/azure-terraform/kuebernetes'
-    environmentServiceName: 'Azure-resource-aforo255fv'
+    environmentServiceName: 'Azure-resource-afor225fv'
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
     allowTelemetryCollection: true
     

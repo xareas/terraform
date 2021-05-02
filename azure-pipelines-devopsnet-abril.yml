@@ -29,7 +29,7 @@ steps:
     backendAzureRmResourceGroupLocation: 'westeurope'
     backendAzureRmStorageAccountName: 'storageacctaforo255fv'
     backendAzureRmContainerName: 'storageacctaforo255fvcontainer'
-    backendAzureRmKey: 'kubernetes-dev.tfstate'
+    backendAzureRmKey: 'kubernetesgv-dev.tfstate'
     allowTelemetryCollection: true
 - task: TerraformCLI@0
   inputs:

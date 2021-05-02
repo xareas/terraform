@@ -16,6 +16,7 @@ steps:
   inputs:
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/azure-terraform/kuebernetes'
+    commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(public.secureFilePath)'
     backendType: 'azurerm'
     backendServiceArm: 'Azure-resource-afor225fv'
     ensureBackend: true

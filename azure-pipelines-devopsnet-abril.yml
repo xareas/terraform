@@ -12,4 +12,17 @@ pool:
 steps:
 - script: echo k8s, Terraform Azure!
   displayName: 'Run a one-line script'
+- task: TerraformCLI@0
+  inputs:
+    command: 'init'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/azure-terraform/kuebernetes'
+    backendType: 'azurerm'
+    backendServiceArm: 'Azure-resource-afor225fv'
+    ensureBackend: true
+    backendAzureRmResourceGroupName: 'terraform-backend-fv'
+    backendAzureRmResourceGroupLocation: 'westeurope'
+    backendAzureRmStorageAccountName: 'storageacctaforo255fv'
+    backendAzureRmContainerName: 'storageacctaforo255fvcontainer'
+    backendAzureRmKey: 'kubernetes-dev.tfstate'
+    allowTelemetryCollection: true
 

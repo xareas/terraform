@@ -31,9 +31,9 @@ steps:
     backendType: 'azurerm'
     backendServiceArm: 'Azure-resource-aforo255'
     ensureBackend: true
-    backendAzureRmResourceGroupName: 'terraformbackendrg'
+    backendAzureRmResourceGroupName: 'terraformbackendrg1'
     backendAzureRmResourceGroupLocation: 'westeurope'
-    backendAzureRmStorageAccountName: 'storageacctaforo255'
-    backendAzureRmContainerName: 'storageacctaforo255Container'
+    backendAzureRmStorageAccountName: 'storageacctaforo2551'
+    backendAzureRmContainerName: 'storageacctaforo255Container1'
     backendAzureRmKey: 'kubernetes-dev.tfstate'
     allowTelemetryCollection: true

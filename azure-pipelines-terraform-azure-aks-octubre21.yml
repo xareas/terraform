@@ -31,7 +31,7 @@ steps:
     backendType: 'azurerm'
     backendServiceArm: 'Azure-resource-aforo255'
     ensureBackend: true
-    backendAzureRmResourceGroupName: 'terraform-backend-rg'
+    backendAzureRmResourceGroupName: 'terraformbackendrg'
     backendAzureRmResourceGroupLocation: 'westeurope'
     backendAzureRmStorageAccountName: 'storageacctaforo255'
     backendAzureRmContainerName: 'storageacctaforo255Container'

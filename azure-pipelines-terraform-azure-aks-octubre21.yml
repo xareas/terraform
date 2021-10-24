@@ -34,6 +34,6 @@ steps:
     backendAzureRmResourceGroupName: 'terraformbackendrg1'
     backendAzureRmResourceGroupLocation: 'westeurope'
     backendAzureRmStorageAccountName: 'storageacctaforo2551'
-    backendAzureRmContainerName: 'storageacctaforo255Container1'
+    backendAzureRmContainerName: 'storageacctaforo255container1'
     backendAzureRmKey: 'kubernetes-dev.tfstate'
     allowTelemetryCollection: true

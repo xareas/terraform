@@ -20,15 +20,15 @@ steps:
 
 - task: TerraformCLI@0
     inputs:
-      command: 'init'
-      workingDirectory: '$(System.DefaultWorkingDirectory)/azure-terraform/kubernetes'
-      commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret)'
-      backendType: 'azurerm'
-      backendServiceArm: 'azure-devops'
-      ensureBackend: true
-      backendAzureRmResourceGroupName: 'terraform-backend-rg'
-      backendAzureRmResourceGroupLocation: 'westeurope'
-      backendAzureRmStorageAccountName: 'storageaccounf'
-      backendAzureRmContainerName: 'storageaccount'
-      backendAzureRmKey: 'Kubernetes-dev.tfstate'
-      allowTelemetryCollection: true
+    command: 'init'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/azure-terraform/kubernetes'
+    commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret)'
+    backendType: 'azurerm'
+    backendServiceArm: 'azure-devops'
+    ensureBackend: true
+    backendAzureRmResourceGroupName: 'terraform-backend-rg'
+    backendAzureRmResourceGroupLocation: 'westeurope'
+    backendAzureRmStorageAccountName: 'storageaccounf'
+    backendAzureRmContainerName: 'storageaccount'
+    backendAzureRmKey: 'Kubernetes-dev.tfstate'
+    allowTelemetryCollection: true
